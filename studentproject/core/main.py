@@ -12,7 +12,7 @@ def entry():
 
     file = sys.modules[__name__]
     print (file)
-    cls=getattr(file,ident)
+    cls=getattr(file,"core."+ident)
     obj=cls(user)
     newtodo= cls.TODO
     for num, i in enumerate(newtodo,1):
