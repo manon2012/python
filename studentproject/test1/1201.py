@@ -45,3 +45,40 @@ print (list(a))
 
 n=[1,22,333]
 print (list(filter(lambda x:len(str(x))==2,n)))
+
+
+import unittest
+
+class cal:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def caladd(self):
+        a=int(self.a)
+        b=int(self.b)
+        return self.a +self.b
+
+class TestU(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        print ("only once")
+        d = cal(10, 10)
+    def setup(self):
+        print ('before everycase')
+        #d=cal(10,10)
+
+    def tearDown(self):
+        print ("after everycase")
+    def test_01(self):
+
+        self.assertEqual(self.d.caladd(),20)
+
+    def test_02(self):
+        pass
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+

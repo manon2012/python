@@ -117,6 +117,14 @@ if __name__ == '__main__':
     t2.join()
     print ('in main')
 
-class TestThread(threading):
-    def __init__(self):
-        super()
+class TestThread(threading.Thread):
+    def __init__(self,name):
+        super().__init__()
+        self.name =name
+
+    def run(self):
+        print ("haharun%s"%self.name)
+t3=TestThread("t3")
+t4=TestThread("t4")
+t3.start()
+t4.start()
