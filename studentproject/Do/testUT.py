@@ -19,11 +19,12 @@ class test_unit(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         print ("one class run once")
-        #c1 = cal(10, 10) why not work?
+        c1 = cal(10, 10)# why not work?
 
     def test_01(self):
-        c1=cal(10,10)
+        #c1=cal(10,10)
         self.assertEqual(c1.caladd(),20,"not equal")
+    @unittest.skip
     def test_02(self):
         c2 = cal(10, 1)
         self.assertEqual(c2.caldiv(),10)

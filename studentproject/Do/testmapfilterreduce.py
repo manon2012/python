@@ -23,3 +23,29 @@ def f3(x,y):
     return  x+y
 print(reduce(f3,c))
 
+
+aa=[1,2,3,4,5]
+def f(n):
+    return n%2==1
+
+print (list(filter(f,aa)))
+
+
+#print (f(aa))
+
+
+a="a   a  b c"
+newa=""
+for i in a:
+    if i ==" ":
+        continue
+    else:
+        newa+=i
+print(newa)
+
+b=a.split(" ")
+print (b)
+print ("".join(b))
+
+newaa=a.replace(" ", "")
+print (newaa)
