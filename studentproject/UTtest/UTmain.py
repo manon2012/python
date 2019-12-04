@@ -14,14 +14,14 @@ class UTtest(unittest.TestCase):
     @unittest.skip
     def test_2(self):
         a2=test_01.Cal(0,1)
-        self.assertEqual(a2.caladd(),1)
+        self.assertEqual(a2.caladd(),10)
 
 if __name__ == '__main__':
     #unittest.main()
     suite=unittest.TestSuite()
     suite.addTest(UTtest('test_1'))
 
-    suite.addTest(UTtest('test_1'))
+    #suite.addTest(UTtest('test_2'))
 
     run=unittest.TextTestRunner()
     run.run(suite)
