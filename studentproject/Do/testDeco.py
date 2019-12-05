@@ -27,3 +27,12 @@ def cal(a):
     return  newadd
 
 print (cal(10)())
+
+
+def f1(x,y):
+    def add():
+        return x+y
+    return add
+
+r1=f1(1,1)
+print (r1())
