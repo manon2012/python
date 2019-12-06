@@ -128,3 +128,7 @@ t3=TestThread("t3")
 t4=TestThread("t4")
 t3.start()
 t4.start()
+
+
+
+import lxml
