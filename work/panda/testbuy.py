@@ -1,6 +1,6 @@
 import time
 import random
-def buyonestock(stockname = '600250'):
+def buyonestock(stockname = '001'):
     n=random.random()
     if n>0.5:
         return

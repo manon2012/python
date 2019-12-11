@@ -61,3 +61,22 @@ while 1:
         i=getattr(tom, Teacher.techdict[key])
         i()
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
