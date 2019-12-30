@@ -19,7 +19,8 @@ class test_unit(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         print ("one class run once")
-        c1 = cal(10, 10)# why not work?
+        c1 = cal(10, 10)
+        # why not work?
 
     def test_01(self):
         #c1=cal(10,10)
