@@ -28,3 +28,5 @@ def insert_sort(n):
 print (insert_sort([3,2,1,0,100,1]))
 
 
+
+
