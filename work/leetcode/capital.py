@@ -13,3 +13,14 @@ mylist = dict.fromkeys(mylist)
 print(mylist)
 
 print ('Hello'=="Hello")
+
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+    
+import os
+os.path.commonprefix()
